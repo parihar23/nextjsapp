@@ -23,22 +23,29 @@
 
 // export default DashboardPage;
 
+type Todo = {
+  id: number;
+  title: string;
+  completed: boolean;
+};
+
 const waitFor = (sec: number) =>
   new Promise((res) => setTimeout(res, sec * 1000));
 
-const getTodos = async () => {
+const getTodos = async (): Promise<Todo[]> => {
   const res = await fetch("https://jsonplaceholder.typicode.com/todos");
-  return await res.json();
+  return res.json();
 };
 
 export default async function DashboardPage() {
   const todos = await getTodos();
   await waitFor(1);
+
   return (
     <div>
       <nav>
         <h1>Dashboard Page</h1>
-        {todos.map((todo: any) => (
+        {todos.map((todo) => (
           <li key={todo.id}>{todo.title}</li>
         ))}
       </nav>
