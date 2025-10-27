@@ -1,5 +1,5 @@
 // "use client"; // by default server component
-const waitFor = (sec: number) => new Promise((res, rej) => setTimeout(res, sec * 1000));
+const waitFor = (sec: number) => new Promise((res) => setTimeout(res, sec * 1000));
 const UserPage = async () => {
     await waitFor(4);
     // console.log("sdfghsd sdfgsdf11");
