@@ -1,9 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  experimental: {
-    // serverActions: true,
+  reactStrictMode: true,
+  swcMinify: true,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  images: {
+    formats: ["image/avif", "image/webp"],
   },
 };
 
