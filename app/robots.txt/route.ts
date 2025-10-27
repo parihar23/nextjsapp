@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: '/admin', // Example: block admin pages
+        // disallow: '/admin', // Example: block admin pages
       },
     ],
     sitemap: 'https://nextjsapp-3x7u.vercel.app/sitemap.xml',
