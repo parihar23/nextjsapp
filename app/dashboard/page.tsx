@@ -33,7 +33,7 @@ const getTodos = async () => {
 
 export default async function DashboardPage(props: any) {
   const todos = await getTodos();
-  // await waitFor(2);
+  await waitFor(1);
   return (
     <div>
       <nav>
