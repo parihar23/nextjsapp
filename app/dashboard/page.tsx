@@ -31,16 +31,16 @@ const getTodos = async () => {
   return await res.json();
 };
 
-export default async function DashboardPage(props: any) {
+export default async function DashboardPage() {
   const todos = await getTodos();
   await waitFor(1);
   return (
     <div>
       <nav>
         <h1>Dashboard Page</h1>
-        {todos.map((todo) => (
-        <li key={todo.id}>{todo.title}</li>
-      ))}
+        {todos.map((todo: any) => (
+          <li key={todo.id}>{todo.title}</li>
+        ))}
       </nav>
     </div>
   );
