@@ -23,6 +23,8 @@
 
 // export default DashboardPage;
 
+import Link from "next/link";
+
 type Todo = {
   id: number;
   title: string;
@@ -43,6 +45,9 @@ export default async function DashboardPage() {
 
   return (
     <div>
+      <Link href="/">Go to home Page</Link>
+      <Link href="/blog">Go to blog Page</Link>
+      <Link href="/dashboard">Go to dashboard Page</Link>
       <nav>
         <h1>Dashboard Page</h1>
         {todos.map((todo) => (

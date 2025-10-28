@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 type Post = {
   id: number;
   title: string;
@@ -9,10 +11,15 @@ export default async function Page() {
   const posts: Post[] = await res.json();
 
   return (
-    <ul>
-      {posts.map((post) => (
-        <li key={post.id}>{post.title} 123</li>
-      ))}
-    </ul>
+    <div>
+      <Link href="/">Go to home Page</Link>
+      <Link href="/blog">Go to blog Page</Link>
+      <Link href="/dashboard">Go to dashboard Page</Link>
+      <ul>
+        {posts.map((post) => (
+          <li key={post.id}>{post.title} 123</li>
+        ))}
+      </ul>
+    </div>
   );
 }
