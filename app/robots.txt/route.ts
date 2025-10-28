@@ -2,7 +2,7 @@ export async function GET() {
   const content = `
 User-agent: *
 Allow: /
-Sitemap: https://nextjsapp-3x7u.vercel.app/sitemap.xml
+Sitemap: https://indorefresh.site/sitemap.xml
 `;
 
   return new Response(content, {
