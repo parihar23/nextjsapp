@@ -13,6 +13,7 @@ export default function Home() {
           height={38}
           priority
         />
+        <Link href="/">Go to home Page</Link>
         <Link href="/blog">Go to blog Page</Link>
         <Link href="/dashboard">Go to dashboard Page</Link>
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
