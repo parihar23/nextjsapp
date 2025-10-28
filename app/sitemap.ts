@@ -11,13 +11,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: 'https://indorefresh.site/dashboard',
       lastModified: new Date(),
-      changeFrequency: 'weekly',
+      changeFrequency: 'daily',
       priority: 0.8,
     },
     {
       url: 'https://indorefresh.site/blog',
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: 'daily',
       priority: 0.7,
     },
   ];
