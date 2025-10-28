@@ -12,8 +12,7 @@ export default async function Page() {
 
   return (
     <div>
-      <Link href="/">Go to home Page</Link>
-      <Link href="/blog">Go to blog Page</Link>
+      <Link href="/">Go to home Page | </Link>
       <Link href="/dashboard">Go to dashboard Page</Link>
       <ul>
         {posts.map((post) => (
