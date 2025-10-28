@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://nextjsapp-3x7u.vercel.app/sitemap.xml",
+    sitemap: "https://indorefresh.site/sitemap.xml",
   };
 }
