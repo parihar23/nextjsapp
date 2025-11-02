@@ -16,6 +16,7 @@ export default function Home() {
         <Link href="/">Go to home Page</Link>
         <Link href="/blog">Go to blog Page</Link>
         <Link href="/dashboard">Go to dashboard Page</Link>
+        <h1>test ravindra next js seo on home page</h1>
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}

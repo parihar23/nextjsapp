@@ -47,6 +47,7 @@ export default async function DashboardPage() {
     <div>
       <Link href="/">Go to home Page | </Link>
       <Link href="/blog">Go to blog Page</Link>
+      <h1>test ravindra next js seo on dashboard page</h1>
       <nav>
         <h1>Dashboard Page</h1>
         {todos.map((todo) => (

@@ -14,6 +14,7 @@ export default async function Page() {
     <div>
       <Link href="/">Go to home Page | </Link>
       <Link href="/dashboard">Go to dashboard Page</Link>
+      <h1>test ravindra next js seo on blog page</h1>
       <ul>
         {posts.map((post) => (
           <li key={post.id}>{post.title} 123</li>
